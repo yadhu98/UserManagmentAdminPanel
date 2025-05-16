@@ -1,0 +1,30 @@
+.navbar{
+    padding: 1%;
+    background-color: var(--accent-200);
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-100);
+    margin-left: 5%;
+}
+
+.navbar-menu{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 5%;
+}
+
+.buttonLogout{
+    background-color: var(--primary-100);
+    color: var(--text-100);
+    padding: 1% 3%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.buttonLogout:hover{
+    background-color: var(--primary-200);
+}

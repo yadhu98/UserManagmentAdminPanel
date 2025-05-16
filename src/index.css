@@ -1,0 +1,34 @@
+:root {
+     --primary-100:#019b98;
+    --primary-200:#55ccc9;
+    --primary-300:#c1ffff;
+    --accent-100:#dd0025;
+    --accent-200:#ffbfab;
+    --text-100:#014e60;
+    --text-200:#3f7a8d;
+    --bg-100:#fbfbfb;
+    --bg-200:#f1f1f1;
+    --bg-300:#c8c8c8;
+      
+      
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--bg-100);
+    color: var(--text-100);
+    position: relative;
+}
+
+.dark {
+    --primary-100:#6c35de;
+    --primary-200:#a364ff;
+    --primary-300:#ffc7ff;
+    --accent-100:#cb80ff;
+    --accent-200:#373737;
+    --text-100:#ffffff;
+    --text-200:#e0e0e0;
+    --bg-100:#241b35;
+    --bg-200:#342a45;
+    --bg-300:#4d425f;
+  }

@@ -1,0 +1,17 @@
+.graph-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 400px;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: var(--bg-200);
+}
+
+.graph-title{
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}

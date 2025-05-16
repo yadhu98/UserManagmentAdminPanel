@@ -1,0 +1,28 @@
+.dashboard-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 5%;
+}
+
+.dashboard-body{
+    height: 70vh;
+    padding: 30px;
+}
+
+.dashboard-stats{
+    display: flex;
+    flex-wrap: wrap;
+    /* gap : 50px; */
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.graph-section{
+
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap : 150px
+}

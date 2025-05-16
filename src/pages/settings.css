@@ -1,0 +1,26 @@
+.settings-body{
+    width : 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.settings-form{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+.settings-form div{
+    width: 80%;
+}
+
+.settings-body-input{
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 0px 10px;
+    margin-bottom: 2%;
+}
