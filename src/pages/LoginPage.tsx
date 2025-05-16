@@ -3,6 +3,8 @@ import { useDispatch } from 'react-redux';
 import { loginSucess, userState } from '../store/authSlice';
 import { AuthService } from '../services/authService';
 import { useNavigate } from 'react-router-dom';
+import './loginPage.css'
+import Button from '../components/Button';
 
 const LoginPage = () => {
   const [username, setUsername] = useState('');
@@ -23,14 +25,15 @@ const LoginPage = () => {
 
 
   return (
-    <form onSubmit={handleSubmit} style={{ maxWidth: 320, margin: '2rem auto' }}>
+    <div className='login-container'>
+<div className='form-login'>
       <h2>Login</h2>
       <input
         placeholder="Username"
         value={username}
         onChange={e => setUsername(e.target.value)}
         required
-        style={{ display: 'block', margin: '1rem 0', width: '100%' }}
+        className='login-body-input'
       />
       <input
         placeholder="Password"
@@ -38,12 +41,12 @@ const LoginPage = () => {
         value={password}
         onChange={e => setPassword(e.target.value)}
         required
-        style={{ display: 'block', margin: '1rem 0', width: '100%' }}
+        className='login-body-input'
       />
-      <button type="submit" disabled={loading} style={{ width: '100%' }}>
-        {loading ? 'Logging in...' : 'Login'}
-      </button>
-    </form>
+      <Button title={loading ? 'Logging in...' : 'Login'} onclickFn={handleSubmit}/>
+    </div>
+    </div>
+    
   );
 };
 

@@ -3,6 +3,7 @@ export type themeTypes = {
     isdark : boolean,
     toggleDark : ()=> void
 }
+// eslint-disable-next-line react-refresh/only-export-components
 export const ThemeContext = createContext<themeTypes | null>(null)
 
 export const ThemeProvider = ({children} : {children : ReactNode}) => {

@@ -1,6 +1,6 @@
 // import { useEffect, useState } from 'react'
 import './App.css'
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Link, Navigate, Route, Routes } from 'react-router-dom'
 import { lazy, Suspense } from 'react'
 import { ProtectedRoutes } from './components/ProtectedRoute'
 import { useSelector } from 'react-redux'
@@ -43,6 +43,9 @@ function App() {
 
       <Suspense fallback={<div>Loading</div>} >
         <Routes>
+        <Route path="/" element={
+            isAuthenticated ? <Navigate to="/dashboard" /> : <Navigate to="/login" />
+          } />
           <Route path='/login' element={
             <LoginPage />} />
           <Route path='/dashboard' element={

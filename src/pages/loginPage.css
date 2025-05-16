@@ -1,0 +1,26 @@
+.login-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-100);
+}
+
+.form-login{
+    width: 700px;
+    background-color: var(--bg-200);
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.login-body-input{
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 0px 10px;
+    margin-bottom: 2%;
+}
